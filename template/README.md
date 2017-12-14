@@ -17,6 +17,9 @@ yarn dev
 
 # テスト
 yarn test
+
+# テストカバレッジを開く (only Windows)
+yarn repo
 {{/test}}
 {{#doc}}
 

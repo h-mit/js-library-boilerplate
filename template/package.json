@@ -6,14 +6,15 @@
   "main": "dist/{{ name }}.js",
   "license": "MIT",
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack --watch",
     {{#test}}
     "test": "jest --config test/jest.config.js --coverage",
+    "repo": "start test/coverage/lcov-report/index.html",
     {{/test}}
     {{#doc}}
-    "doc": "esdoc"
+    "doc": "esdoc",
     {{/doc}}
+    "dev": "webpack --watch",
+    "build": "webpack"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
