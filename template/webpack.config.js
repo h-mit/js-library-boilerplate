@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '{{ name }}.js',
-    library: '{{#kebab_to_camel name}}',
+    library: '{{camelcase name}}',
     libraryTarget: 'umd'
   },
   module: {
