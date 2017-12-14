@@ -1,0 +1,33 @@
+{
+  "name": "{{ name }}",
+  "version": "1.0.0",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
+  "main": "dist/{{ name }}.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack --watch",
+    {{#test}}
+    "test": "jest --config test/jest.config.js --coverage",
+    {{/test}}
+    {{#doc}}
+    "doc": "esdoc"
+    {{/doc}}
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    {{#doc}}
+    "esdoc": "^1.0.4",
+    "esdoc-standard-plugin": "^1.0.0",
+    {{/doc}}
+    {{#test}}
+    "jest": "^21.2.1",
+    {{/test}}
+    "lodash": "^4.17.4",
+    "webpack": "^3.10.0",
+    "webpack-node-externals": "^1.6.0"
+  }
+}

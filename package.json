@@ -1,0 +1,7 @@
+{
+  "name": "js-library-boilerplate",
+  "version": "1.0.0",
+  "repository": "git@github.com:h-mit/js-library-boilerplate.git",
+  "author": "Hiroshi MITANI <hmitani0429@gmail.com>",
+  "license": "MIT"
+}
